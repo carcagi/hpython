@@ -77,7 +77,7 @@ if a != 10:
 # inline (considered bad practice)
 if a == 5: print('a is 5')
 
-# short hand
+# short hand (Ternary in C)
 a = 7
 print('verdadero') if a == 5 else print('falso')
 print('verdadero' if a == 7 else 'falso')
