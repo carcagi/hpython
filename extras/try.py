@@ -2,7 +2,7 @@
 # If the code inside the try block works the except part is ignored
 # If the code inside the try block fails, the excepto part is executed
 
-# the following code will fail on line 2 because I can't convert
+# The following code will fail on line 2 because I can't convert
 # a non numerical string to integer, this happens, for example
 # when the user enters a non valid number
 
@@ -31,7 +31,7 @@ print('Number Two:', istring)
 
 
 # The code above will work, but it's not a good practice, we should
-# handle the exception and log it somewhere
+# handle the thrown exception and log it somewhere
 
 print()
 
