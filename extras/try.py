@@ -31,7 +31,8 @@ print('Number Two:', istring)
 
 
 # The code above will work, but it's not a good practice, we should
-# handle the thrown exception and log it somewhere
+# handle the thrown exception and log it somewhere,
+# Exception handles the exact error message
 
 print()
 
@@ -48,3 +49,29 @@ print('Number One: ', istring)
 string = '123'
 istring = int(string)
 print('Number Two:', istring)
+
+# The try statement has one else clause.
+
+print()
+
+string = '123'
+
+try:
+    istring = int(string)
+except Exception as ex:
+    istring = -1
+    # This will print the error, but should be logged into a file or log system
+    print(ex)
+else:
+    print('This worked')
+
+# The else part won't get executed if the try block fails.
+print()
+string = 'Something'
+try:
+    istring = int(string)
+except Exception as ex:
+    istring = -1
+else:
+    print('This does not show')
+print('It didn\t got into the else')
