@@ -70,7 +70,7 @@ print()
 string = 'Something'
 try:
     istring = int(string)
-except Exception as ex:
+except Exception:
     istring = -1
 else:
     print('This does not show')
