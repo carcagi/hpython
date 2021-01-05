@@ -17,6 +17,9 @@ class student():
         return f"{self.name}, is is complaining"
 
     # The regular usage or repr, is to represent how the object was created.
+    # if we don’t implement __str__ function
+    # then the __repr__ function is called try deleting the str func and
+    # print the object
     def __repr__(self):
         return f"student('{self.name}'', '{self.age}')"
 
