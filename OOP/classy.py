@@ -28,6 +28,14 @@ class studentCH13(student):
         self.company = company
         return f"{self.name} works at {self.company}"
 
+    # Simple setter for _protection
+    def set_protection(self, param):
+        self._protection = bool(param)
+
+    # Simple getter for _protection
+    def get_protection(self):
+        return self._protection
+
 
 student1 = studentCH13('Pepito', 21)
 student1.name = "Juanita"
